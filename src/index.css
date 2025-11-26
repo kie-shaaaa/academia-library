@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+html, body, #root {
+    background-color: #F8F2DE;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Crimson Text', serif;
+}
+
+body {
+    background-color: #F8F2DE;
+    font-family: 'Crimson Text', serif;
+}
+
+.header-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #660B05;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+h6 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+}
+
+.nav-link {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.brand-logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Styles for book descriptions */
+.book-card .book-description {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+/* For the modal description */
+.modal-content .book-description {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Add to your existing index.css */
+.description-skeleton {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.skeleton-line {
+    height: 16px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.skeleton-line.shorter {
+    width: 60%;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* current navbar toggler styles (replace or append) */
+.navbar-toggler {
+    border: none !important;
+    background: transparent;
+    padding: 0.25rem 0.75rem;
+    box-shadow: none !important;
+}
+
+/* custom focus/active styling: remove black outline, give a subtle creamy glow */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+    outline: none !important;
+    border: none !important;
+    box-shadow: 0 0 0 0.25rem rgba(255,240,196,0.16) !important; /* #FFF0C4 at low opacity */
+}
+
+/* keep the hamburger lines the same color */
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='%23FFF0C4' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.25em 1.25em;
+}
+
