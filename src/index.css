@@ -39,21 +39,20 @@ h6 {
     font-weight: 700;
 }
 
-/* Styles for book descriptions */
+
 .book-card .book-description {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 0.95rem;
     line-height: 1.45;
 }
 
-/* For the modal description */
+
 .modal-content .book-description {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 1rem;
     line-height: 1.6;
 }
 
-/* Add to your existing index.css */
 .description-skeleton {
     animation: pulse 1.5s ease-in-out infinite;
 }
@@ -75,7 +74,7 @@ h6 {
     100% { opacity: 1; }
 }
 
-/* current navbar toggler styles (replace or append) */
+
 .navbar-toggler {
     border: none !important;
     background: transparent;
@@ -83,16 +82,16 @@ h6 {
     box-shadow: none !important;
 }
 
-/* custom focus/active styling: remove black outline, give a subtle creamy glow */
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler:focus-visible {
     outline: none !important;
     border: none !important;
-    box-shadow: 0 0 0 0.25rem rgba(255,240,196,0.16) !important; /* #FFF0C4 at low opacity */
+    box-shadow: 0 0 0 0.25rem rgba(255,240,196,0.16) !important;
 }
 
-/* keep the hamburger lines the same color */
+
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='%23FFF0C4' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
     background-repeat: no-repeat;

@@ -40,7 +40,7 @@ function SearchSection({ onSearch, onShowFeatured, showFeatured = true }: Search
     if (book.coverUrl) {
       return book.coverUrl.replace('-L.jpg', `-${size}.jpg`);
     }
-    return ''; // Return null instead of placeholder
+    return ''; 
   };
 
   const NoPhotoPlaceholder = () => (
@@ -77,7 +77,7 @@ function SearchSection({ onSearch, onShowFeatured, showFeatured = true }: Search
       const res = await fetch(`https://openlibrary.org/search.json?q=${encodeURIComponent(q)}&limit=30`);
       const data = await res.json();
       
-      // Transform API data to match our Book interface
+      // Transform API datato match  Book interface
       let formattedBooks: Book[] = data.docs.map((doc: any, index: number) => ({
         id: doc.key || `book-${index}`,
         title: doc.title,
@@ -88,7 +88,7 @@ function SearchSection({ onSearch, onShowFeatured, showFeatured = true }: Search
         cover_i: doc.cover_i
       }));
 
-      // Filter for relevance: title or author must contain search query
+      // Filter: title or author must contain search query
       const queryLower = q.toLowerCase();
       formattedBooks = formattedBooks.filter(book => {
         const titleMatch = book.title.toLowerCase().includes(queryLower);
@@ -358,7 +358,7 @@ function SearchSection({ onSearch, onShowFeatured, showFeatured = true }: Search
         </div>
       )}
 
-      {/* Book Detail Modal */}
+      {/* Book Detail  */}
       {showModal && selectedBook && (
         <div 
           className="modal fade show d-block" 
